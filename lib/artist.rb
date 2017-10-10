@@ -23,7 +23,6 @@ class Artist
 
   # Artist #name .song_count is a class method that returns the total number of songs associated to all existing artists
   def self.song_count
-    @@song_count
   end
 
 end
