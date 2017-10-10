@@ -2,7 +2,7 @@
 
 class Artist
 
-  @@song_count = @songs.count
+  @@song_count = @songs.length
 
   attr_accessor :name, :songs
 
