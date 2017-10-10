@@ -24,7 +24,7 @@ class Author
   end
 
   # Author #name .post_count is a class method that returns the total number of posts associated to all existing authors
-  def selfpost_count
+  def self.post_count
     @@post_count
   end
 
