@@ -8,6 +8,6 @@ class Post
   end
 
   def author_name
-    self.@author
+    @author
   end
 end
