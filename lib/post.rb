@@ -8,6 +8,6 @@ class Post
   end
 
   def author_name
-    self.author.name || puts nil
+    self.author.name || nil
   end
 end
