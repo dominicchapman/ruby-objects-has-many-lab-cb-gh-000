@@ -7,7 +7,15 @@ class Post
     @title = title
   end
 
+  def has_author?
+    !!self.author
+  end
+
   def author_name
-    self.author.name || nil
+    if has_author?
+      self.author.name
+    else
+      nil
+    end
   end
 end
