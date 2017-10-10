@@ -2,6 +2,8 @@
 
 class Artist
 
+  @@song_count = @songs.count
+
   attr_accessor :name, :songs
 
   def initialize(name)
@@ -23,7 +25,7 @@ class Artist
 
   # Artist #name .song_count is a class method that returns the total number of songs associated to all existing artists
   def self.song_count
-    @songs.count
+    @@song_count
   end
 
 end
