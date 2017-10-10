@@ -2,6 +2,8 @@
 
 class Artist
 
+  @@song_count = 0
+
   attr_accessor :name, :songs
 
   def initialize(name)
@@ -13,6 +15,7 @@ class Artist
   def add_song(song)
     @songs << song
     song.artist = self
+    @@song_count += 1
   end
 
   # Artist #name #add_song_by_name takes in an argument of a song name, creates a new song with it and associates the song and artist
@@ -23,6 +26,7 @@ class Artist
 
   # Artist #name .song_count is a class method that returns the total number of songs associated to all existing artists
   def self.song_count
+    @@song_count
   end
 
 end
